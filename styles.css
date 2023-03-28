@@ -45,15 +45,21 @@ legend {
   width: 100%;
 }
 
-.secundario {
-  display: block;
-  
+p, label[for="contacto"], label[for="intereses"] {
+  font-weight: bold;
 }
 
-form .btn {
-  width: 15%;
+p {
+  margin-bottom: 0em;
+}
+
+#intereses {
+  width: auto;  
+}
+
+.btn {
   border: none;
   background-color: gray;
-  float: inline-end;
+  float: right;
 }
 
