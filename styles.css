@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+
+
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;  
+  padding-left: .5em;
+}
+
+form h1 {
+  align-items: flex-start;
+}
+
+input:required::after {
+  content: "Campo obligatorio";
+  color: red;
+  display: block;
+}
+
+
+form {
+  display: grid;
+  grid-template-columns: max-content;  
+  justify-content: center;
+}
+textarea {
+ width: 100%;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  border-bottom: 1px solid black;
+}
+.primario:first-of-type input {
+  width: 100%;
+}
+
+.secundario {
+  display: block;
+  
+}
+
+form .btn {
+  width: 15%;
+  border: none;
+  background-color: gray;
+  float: inline-end;
+}
+

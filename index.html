@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Examen Parte HTML</title>
+</head>
+
+<body class="body">
+  <form>
+    <h1>Formulario de contacto</h1>
+
+    <fieldset class="primario">
+      <legend>Hablemos...</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Su Nombre"><br>
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required placeholder="Su Dirección"><br>
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required placeholder="Su email"><br>
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" required placeholder="Motivo de Contacto"><br>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required rows="4" cols="50" placeholder="Su mensaje"></textarea>
+    </fieldset>
+
+    <fieldset class="secundario">
+      <legend>Otros datos</legend>
+      <label for="contacto"><strong>¿Cómo contactó con nosotros?</strong></label><br>
+      <input type="checkbox" id="web" value="web"
+        aria-label="Contactó con nosotros a través de nuestra página web">
+      <label for="web">Web</label>
+      <input type="checkbox" id="amigos" value="amigos"
+        aria-label="Contactó con nosotros a través de amigos">
+      <label for="amigos">Amigos</label>
+      <input type="checkbox" id="prensa" value="prensa"
+        aria-label="Contactó con nosotros a través de la prensa">
+      <label for="prensa">Prensa</label>
+      <input type="checkbox" id="otros" value="otros"
+        aria-label="Contactó con nosotros a través de otro medio">
+      <label for="otros">Otros</label><br>
+      <label for="intereses">Sus intereses:</label><br>
+
+      <select id="intereses" name="intereses" size="3" aria-label="Intereses">
+        <option value="">Selecciona una opción</option>
+        <option value="deportes"></option>
+        <option value=" naturaleza">Naturaleza</option>
+        <option value="informatica">Informática</option>
+        <option value="cine">Cine</option>
+      </select><br>
+    </fieldset>
+    <button class="btn" type="submit">Enviar</button>
+  </form>
+</body>
+
+</html>
